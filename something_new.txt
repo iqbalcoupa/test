@@ -1,9 +1,3 @@
-I am mixed mode changes
-
-I am commit 2 changes
-
-I am commit 3 changes
-
 something new commit 1
 
 something new commit 2
