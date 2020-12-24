@@ -7,3 +7,5 @@ mixed mode commit 2 changes
 I am commit 3 changes
 
 change 3
+
+change 4
