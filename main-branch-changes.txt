@@ -5,3 +5,5 @@ I am lucky main branch
 mixed mode commit 2 changes
 
 I am commit 3 changes
+
+change 3
