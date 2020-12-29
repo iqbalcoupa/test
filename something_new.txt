@@ -1,5 +1,6 @@
 something new commit 1
 
+changed commit 3
 changed commit 9
 
 changed new commit 3
@@ -7,6 +8,12 @@ changed new commit 3
 something new commit 4
 
 added by b1
+
+added by b2
+
+also added by b2
+
+also added by b1
 
 also added by b1
 
