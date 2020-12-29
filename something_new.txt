@@ -1,7 +1,13 @@
 something new commit 1
 
-something new commit 2
+changed commit 9
 
-something new commit 3
+changed new commit 3
 
 something new commit 4
+
+added by b1
+
+also added by b1
+
+i am from b1
