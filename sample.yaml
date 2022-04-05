@@ -1,0 +1,51 @@
+# define all the jobs with their actual path
+# also set required parameters and env variables
+# Required Jobs -> unit, code_coverage, code_analysis
+# required jobs are compulsory to be present below
+jobs:
+  # Required Jobs
+  unit: 
+    name: 'Unit tests'
+    link: link/path of jenkins
+    parameters:
+      param1: value1
+      param2: value2
+    environment:
+      env1: value1
+      env2: value2
+  code_analysis:
+    link: link of job
+  code_coverage:
+    link: link of job
+  
+  # Additional jobs
+  api:
+    name: 'API tests'
+    link: link/path of jenkins
+  integration:
+    name: 'Integration Tests'
+  hulk:
+    name: 'Hulk Test'
+    link: link/path of jenkins
+    key: xxxx
+  localization:
+    name: 'Localization Tests'
+    link: link/path of jenkins
+  security:
+    name: 'Security Tests'
+    link: link/path of jenkins
+  accessibility:
+    name: '508/Accessibility Tests'
+    link: link/path of jenkins
+# define the order in which you want to execute tests
+# tests will run in order one by one they are defined from top to bottom
+run:
+  - [unit, code_coverage, code_analysis] # parallel execution, these 3 tests will run in parallel
+  - api
+  - [integration, localization]
+  - accessibility
+  - security
+  - hulk
+notification:
+  email: team-email@coupa.com
+  slack: '#channel-name'
